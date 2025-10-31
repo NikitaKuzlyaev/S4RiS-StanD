@@ -8,7 +8,7 @@ html, body, div, h1, h2, h3, h4, ul, table,tr,td{
 
 h1, h2, h3, h4, h5, h6, th ,a{
  
-   color: #317EAC;
+   color: #17638f;
    font-family: "Telex", sans-serif;
    font-weight: 700;
    line-height: 20px;
@@ -54,7 +54,7 @@ html {
 body {
   font: normal 14px/1.5 "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
   padding-bottom: 40px;
-  background-color: #FFFFFF;
+  background-color: rgb(0, 0, 128);
 }
 
 .download-button{
@@ -245,11 +245,14 @@ width: 116px;
 }
 
 .contestant-info{
-   border-radius:20px;
-   background-color:#99CCFF; 
+   border-radius:0px;
+   background-color:rgb(0, 187, 187); 
    margin:0 auto; 
    margin-bottom:5px;
-   height:98%;
+   height:100%;
+   border: dashed;
+   border-width: 2px;
+   border-color: rgb(128, 128, 128);
 }
 
 
@@ -328,7 +331,7 @@ width: 116px;
    width:50px;
    text-align:center;
    margin:0 auto;
-   border-radius:5px;
+   border-radius:0px;
    -moz-border-radius:5px;
 
    font-family:Verdana;
@@ -358,9 +361,9 @@ width: 116px;
 }
 
 #no-submitions{
-  background-color:	#FFFFFF;
+  background-color:	#ffffff00;
 }
 
 #selected-row{
-   background-color:#975AD5;
+   background-color:rgb(192, 192, 192);
 }

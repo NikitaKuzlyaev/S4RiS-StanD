@@ -355,7 +355,7 @@ function Standings(cHash, limit, defrostingComparatorName) {
             this.flashActive = false;
             clearInterval(this.timer);
             if (this.curRunInfo.solved) {
-                getRow(curRow).find('.problem').filter('#' + this.pName + '').find('.problem-result').animate({backgroundColor: '#669533'}, 100);
+                getRow(curRow).find('.problem').filter('#' + this.pName + '').find('.problem-result').animate({backgroundColor: '#669533'}, 250);
                 updateAC(curRow, this.pName, this.curRunInfo.nTries);
                 contestant.penalty += this.curRunInfo.penalty;
                 updatePenalty(curRow, contestant.penalty);
@@ -367,7 +367,7 @@ function Standings(cHash, limit, defrostingComparatorName) {
                 setCurrentRow(curRow);
                 this.curRunInfo.defrost = true;
             } else {
-                getRow(curRow).find('.problem').filter('#' + this.pName + '').find('.problem-result').animate({backgroundColor: '#C71C22'}, 100);
+                getRow(curRow).find('.problem').filter('#' + this.pName + '').find('.problem-result').animate({backgroundColor: '#C71C22'}, 250);
                 updateNAC(curRow, this.pName, this.curRunInfo.nTries);
                 this.curRunInfo.defrost = true;
             }
@@ -387,11 +387,11 @@ function Standings(cHash, limit, defrostingComparatorName) {
                     var object = {
                         func: function () {
                             var elem = getRow(curRow).find('.problem').filter('#' + pName + '').find('.problem-result');
-                            elem.animate({backgroundColor: '#FFFFFF'}, 400);
-                            elem.animate({backgroundColor: '#FF9D00'}, 400);
+                            elem.animate({backgroundColor: '#000000'}, 50);
+                            elem.animate({backgroundColor: '#FF9D00'}, 50);
                         }
                     }
-                    this.timer = setInterval(object.func, 1000);
+                    this.timer = setInterval(object.func, 125);
                     return;
                 }
             }
